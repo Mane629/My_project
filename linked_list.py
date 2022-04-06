@@ -1,8 +1,4 @@
-# Linked list implementation in Python
-
-
 class Node:
-    # Creating a node
     def __init__(self, item):
         self.item = item
         self.next = None
@@ -14,20 +10,20 @@ class LinkedList:
         self.head = None
 
 
-if __name__ == '__main__':
 
-    linked_list = LinkedList()
+    # if __name__ == '__main__':
 
-    # Assign item values
-    linked_list.head = Node(1)
-    second = Node(2)
-    third = Node(3)
+linked_list = LinkedList()
 
-    # Connect nodes
-    linked_list.head.next = second
-    second.next = third
+linked_list.head = Node(1)
+second = Node(2)
+third = Node(3)
 
-    Print the linked list item
-    while linked_list.head != None:
-        print(linked_list.head.item, end=" ")
-        linked_list.head = linked_list.head.next
+    # Connecting nodes
+linked_list.head.next = second
+second.next = third
+
+    # Print the linked list item
+while linked_list.head != None:
+    print(linked_list.head.item)
+    linked_list.head = linked_list.head.next
